@@ -1,0 +1,101 @@
+footer.footer{
+  grid-column: 2/12;
+  font-family: Poppins;
+  margin-top: 200px;
+  .footer_flex_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    & > div {
+      display: inline-block;
+    }
+
+    .logo {
+      h3 {
+        font-weight: $font-medium;
+        color: $black;
+        font-size: 44px;
+
+      }
+
+      p {
+        font-weight: $font-medium;
+        font-size: 13px;
+        color: $grey;
+        margin-top: 35px;
+
+      }
+    }
+  .footer_nav_container{
+
+    display: flex;
+    align-items: start;
+    width: auto;
+    padding-right: 75px;
+    @media screen and (max-width: 600px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      &>div{
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+    .footer-nav {
+      margin-left: 75px;
+
+      * {
+        display: block;
+      }
+
+      p {
+        font-weight: $font-bold;
+        font-size: 21px;
+        margin-bottom: 15px;
+
+      }
+
+      a {
+        font-weight: $font-medium;
+        font-size: 18px;
+        color: $grey;
+        margin-top: 20px;
+      }
+    }
+
+    .out_link {
+      .social_network {
+
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: $font-medium;
+        color: $grey;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .app-link {
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1445px) {
+      flex-wrap: wrap;
+      &>div{
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+  }
+  .license{
+    font-weight: $font-medium;
+    font-size: 14px;
+    color: $grey;
+    margin: 90px auto;
+    width: 300px;
+    text-align: center;
+    display: block;
+  }
+}
